@@ -81,6 +81,35 @@
         }
     });
 
+    // whatsapp link redirect 
+    $('#whatsappForm').on('click', function (event) {
+
+        event.preventDefault(); // Prevent the form from submitting the traditional way
+        const phoneNumber = '23456627998';
+        const message = $('whtsapp-message').value;
+
+        // // Construct the WhatsApp API link
+        // const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+
+        console.log(phoneNumber, message, " just now click");
+        // Redirect the user to the WhatsApp API link
+        // window.location.href = whatsappLink;
+
+    })
+
+    // getElementById('whatsappForm').addEventListener('submit', function(event) {
+    //     event.preventDefault(); // Prevent the form from submitting the traditional way
+
+    //     // Get the phone number and message
+    //     const phoneNumber = '93848470929';
+    //     const message = document.getElementById('message').value;
+
+    //     // Construct the WhatsApp API link
+    //     const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+
+    //     // Redirect the user to the WhatsApp API link
+    //     window.location.href = whatsappLink;
+
 
     // Portfolio isotope and filter
     var portfolioIsotope = $('.portfolio-container').isotope({
