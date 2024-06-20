@@ -298,7 +298,9 @@
               <p>
                 <i class="fa fa-check-circle text-primary me-3"></i>Instalation
               </p>
-              <a href="https://wa.me/2347061362019" class="btn btn-primary rounded-pill py-3 px-5 mt-3"
+              <a
+                href="https://wa.me/2347061362019"
+                class="btn btn-primary rounded-pill py-3 px-5 mt-3"
                 >Explore More</a
               >
             </div>
@@ -371,7 +373,7 @@
               </div>
             </div>
           </div> -->
-          <!-- <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+    <!-- <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
             <div class="service-item rounded overflow-hidden">
               <img class="img-fluid" src="img/img-600x400-4.jpg" alt="" />
               <div class="position-relative p-4 pt-0">
@@ -425,7 +427,7 @@
               </div>
             </div>
           </div> -->
-        <!-- </div>
+    <!-- </div>
       </div>
     </div> -->
     <!-- Service End -->
@@ -725,7 +727,9 @@
             data-wow-delay="0.5s"
           >
             <div class="p-lg-5 pe-lg-0">
-              <h6 class="text-primary">Profesional Consulting</h6>
+              <h6 class="text-primary">
+                Profesional Services, Consulting and Product Enquiries
+              </h6>
               <h1 class="mb-4">Get A Profesional Consultation Now</h1>
               <p class="mb-4 pb-2">
                 repreating lurem pip stuffs heree. Aliqu diam amet diam et eos.
@@ -734,62 +738,67 @@
               </p>
               <form id="whatsappForm">
                 <div class="row g-3">
-                    <div class="col-12 col-sm-6">
-                        <input
-                            type="text"
-                            id="name"
-                            class="form-control border-0"
-                            placeholder="Your Name"
-                            style="height: 55px"
-                            required
-                        />
-                    </div>
-                    <div class="col-12 col-sm-6">
-                        <input
-                            type="email"
-                            id="email"
-                            class="form-control border-0"
-                            placeholder="Your Email"
-                            style="height: 55px"
-                            required
-                        />
-                    </div>
-                    <div class="col-12 col-sm-6">
-                        <input
-                            type="text"
-                            id="mobile"
-                            class="form-control border-0"
-                            placeholder="Your Mobile"
-                            style="height: 55px"
-                            required
-                        />
-                    </div>
-                    <div class="col-12 col-sm-6">
-                        <select id="service" class="form-select border-0" style="height: 55px" required>
-                            <option selected>Select A Service</option>
-                            <option value="Consulting">Consulting</option>
-                            <option value="Maintenance">Maintenance</option>
-                            <option value="Installation">Installation</option>
-                        </select>
-                    </div>
-                    <div class="col-12">
-                        <input
-                            id="note"
-                            class="form-control border-0"
-                            placeholder="Special Note"
-                            style="height: 55px"
-                        />
-                    </div>
-                    <div class="col-12">
-                        <button
-                            class="btn btn-primary rounded-pill py-3 px-5"
-                            type="submit"
-                        >
-                            Submit
-                        </button>
-                    </div>
+                  <div class="col-12 col-sm-6">
+                    <input
+                      type="text"
+                      id="name"
+                      class="form-control border-0"
+                      placeholder="Your Name"
+                      style="height: 55px"
+                      required
+                    />
+                  </div>
+                  <div class="col-12 col-sm-6">
+                    <input
+                      type="email"
+                      id="email"
+                      class="form-control border-0"
+                      placeholder="Your Email"
+                      style="height: 55px"
+                      required
+                    />
+                  </div>
+                  <div class="col-12 col-sm-6">
+                    <input
+                      type="text"
+                      id="mobile"
+                      class="form-control border-0"
+                      placeholder="Your Mobile"
+                      style="height: 55px"
+                      required
+                    />
+                  </div>
+                  <div class="col-12 col-sm-6">
+                    <select
+                      id="service"
+                      class="form-select border-0"
+                      style="height: 55px"
+                      required
+                    >
+                      <option selected>Select A Service</option>
+                      <option value="Consulting">Consulting</option>
+                      <option value="Maintenance">Maintenance</option>
+                      <option value="Installation">Installation</option>
+                    </select>
+                  </div>
+                  <div class="col-12">
+                    <input
+                      id="note"
+                      class="form-control border-0"
+                      placeholder="Special Note"
+                      style="height: 55px"
+                    />
+                  </div>
+                  <div class="col-12">
+                    <button
+                      class="btn btn-primary rounded-pill py-3 px-5"
+                      type="submit"
+                    >
+                      Submit
+                    </button>
+                  </div>
                 </div>
-            </form>
+              </form>
             </div>
           </div>
         </div>
@@ -1110,35 +1119,36 @@
     <script src="lib/isotope/isotope.pkgd.min.js"></script>
     <script src="lib/lightbox/js/lightbox.min.js"></script>
 
-
     <!--  Javascript -->
     <script src="js/main.js"></script>
 
     <script>
-      document.getElementById('whatsappForm').addEventListener('submit', function(e) {
+      document
+        .getElementById("whatsappForm")
+        .addEventListener("submit", function (e) {
           e.preventDefault();
 
           console.log("click");
           // Get form values
-          const name = document.getElementById('name').value;
-          const email = document.getElementById('email').value;
-          const mobile = document.getElementById('mobile').value;
-          const service = document.getElementById('service').value;
-          const note = document.getElementById('note').value;
+          const name = document.getElementById("name").value;
+          const email = document.getElementById("email").value;
+          const mobile = document.getElementById("mobile").value;
+          const service = document.getElementById("service").value;
+          const note = document.getElementById("note").value;
 
           // Construct the message
           const message = `Name: ${name}%0AEmail: ${email}%0AMobile: ${mobile}%0AService: ${service}%0ANote: ${note}`;
 
           // WhatsApp number
-          const whatsappNumber = '2347061362019'; // Replace with the actual number
+          const whatsappNumber = "2347061362019"; // Replace with the actual number
 
           // Construct the WhatsApp URL
           const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${message}`;
 
           // Redirect to WhatsApp
-          window.open(whatsappUrl, '_blank');
-      });
-  </script>
+          window.open(whatsappUrl, "_blank");
+        });
+    </script>
   </body>
 </html>
 
